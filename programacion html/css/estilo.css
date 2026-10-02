@@ -1,0 +1,183 @@
+/* ===== Estilos generales ===== */
+:root {
+  --azul-noche: #050b2e;
+  --azul-profundo: #0b1d4d;
+  --azul-medio: #173b82;
+  --azul-luminoso: #4d8fe8;
+  --dorado: #f6d36a;
+  --dorado-claro: #fff0b5;
+  --blanco-calido: #f4f7ff;
+  --texto-suave: #c9d7f2;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, var(--azul-noche), var(--azul-profundo));
+  color: var(--blanco-calido);
+}
+
+/* ===== Menú de navegación (el de la ayuda) ===== */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--azul-noche);
+  border-bottom: 2px solid var(--dorado);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: var(--blanco-calido);
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: var(--azul-medio);
+  color: var(--dorado-claro);
+}
+
+/* ===== Contenido ===== */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--dorado);
+  text-shadow: 0 0 12px rgba(246, 211, 106, 0.35);
+}
+
+h2 {
+  color: var(--dorado);
+}
+
+p {
+  line-height: 1.6;
+  color: var(--texto-suave);
+}
+
+.portada {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 3px solid var(--dorado);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+/* ===== Galería: filas de 3 imágenes ===== */
+.fila {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.fila figure {
+  flex: 1;
+  margin: 0;
+  background-color: var(--azul-profundo);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--azul-medio);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.fila img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.fila img.imagen-reducida {
+  width: 85%;
+  height: 160px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.fila figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--dorado-claro);
+}
+
+/* ===== Formulario ===== */
+form {
+  background-color: var(--azul-profundo);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--azul-medio);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  background-color: #f4f7ff;
+  color: var(--azul-noche);
+  border: 2px solid var(--azul-luminoso);
+  border-radius: 4px;
+}
+
+.radio label,
+.check label {
+  display: inline;
+  font-weight: normal;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: var(--dorado);
+  color: var(--azul-noche);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--dorado-claro);
+}
+
+/* ===== Pie de página ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  color: var(--texto-suave);
+}
+
+/* ===== Móvil ===== */
+@media (max-width: 700px) {
+  .fila {
+    flex-direction: column;
+  }
+  li {
+    float: none;
+  }
+}
