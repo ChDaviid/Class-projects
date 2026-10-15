@@ -3,6 +3,7 @@ minecraft = {"Luis", "Marta", "Sara", "David"}
 rocket_league = {"Pedro", "Marta", "David", "Elena"}
 
 while True:
+    print("--------------------------------")
     print("1.Mostrar todos los participantes, sin repetir nombres.")
     print("2.Mostrar los participantes comunes a Mario Kart y Minecraft.")
     print("3.Mostrar los participantes inscritos en los tres torneos.")
@@ -12,6 +13,7 @@ while True:
     print("7.Eliminar un participante de un torneo.")
     print("8.Consultar en qué torneos está inscrita una persona.")
     print("9. Salir")
+    print("--------------------------------")
 
     opcion = int(input("Ingrese el la opción que desea realizar: "))
 
