@@ -8,8 +8,8 @@ Los proyectos estarán organizados en carpetas separadas según el lenguaje de p
 
 Python/: proyectos, ejercicios y prácticas desarrollados con Python.
 HTML/: proyectos y prácticas desarrollados con HTML.
-🎯 Objetivo
-El objetivo de este repositorio es guardar mis proyectos, practicar programación y documentar mi progreso mientras adquiero nuevos conocimientos.
+
+🎯El objetivo de este repositorio es guardar mis proyectos, practicar programación y documentar mi progreso mientras adquiero nuevos conocimientos.
 
 Este repositorio irá creciendo a medida que avance en mi aprendizaje y desarrolle nuevos proyectos.
 
