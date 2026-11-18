@@ -14,7 +14,7 @@ def elegir_azar(lista):
 #Raíz cuadrada
 def raiz_cuadrada(numero):
     import math
-    return math.sqrt(numero)
+    return math.sqrt(numero) 
 
 #cajas necesarias
 def cajas_necesarias(cantidad, capacidad_caja):
