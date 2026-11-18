@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kingdom Hearts - Formulario</title>
+  <link type="text/css" href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="galeria.html">Galería</a></li>
+    <li><a href="formulario.html">Formulario</a></li>
+  </ul>
+
+  <main>
+    <h1>Cuéntanos tu opinión</h1>
+
+    <form action="#" method="post">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="personaje">Personaje favorito:</label>
+      <select id="personaje" name="personaje">
+        <option value="sora">Sora</option>
+        <option value="riku">Riku</option>
+        <option value="kairi">Kairi</option>
+        <option value="donald">Donald</option>
+        <option value="goofy">Goofy</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label>¿Cuántos juegos de la saga has jugado?</label>
+      <div class="radio">
+        <input type="radio" id="j0" name="juegos" value="ninguno">
+        <label for="j0">Ninguno</label><br>
+        <input type="radio" id="j1" name="juegos" value="1-3">
+        <label for="j1">De 1 a 3</label><br>
+        <input type="radio" id="j2" name="juegos" value="mas">
+        <label for="j2">Más de 3</label>
+      </div>
+
+      <label for="comentario">Comentario:</label>
+      <textarea id="comentario" name="comentario" rows="5"></textarea>
+
+      <div class="check">
+        <br>
+        <input type="checkbox" id="acepto" name="acepto" required>
+        <label for="acepto">Acepto que mis datos se usen solo para esta actividad</label>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    Página hecha para una actividad de clase. Kingdom Hearts pertenece a Square Enix y Disney.
+  </footer>
+
+</body>
+</html>
